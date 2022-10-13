@@ -123,7 +123,7 @@ const App = () => {
                             </div>
                         </div>
                         <div className="text-[#4B6A9B] mt-6 lg:mt-9 flex items-center gap-0 flex-col lg:gap-5 lg:flex-row">
-                            <div className="flex flex-col gap-3">
+                            <div className="flex flex-col gap-0 lg:gap-3">
                                 <span className="flex items-center gap-5">
                                     <IoLocationSharp />
                                     <span className="w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
@@ -139,7 +139,7 @@ const App = () => {
                                     </a>
                                 </span>
                             </div>
-                            <div className="flex flex-col gap-3">
+                            <div className="flex flex-col gap-0 lg:gap-3">
                                 <span className="flex items-center gap-5">
                                     <FaTwitter />
                                     <span className="w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
