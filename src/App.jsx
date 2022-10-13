@@ -62,8 +62,8 @@ const App = () => {
                 </div>
             </div>
 
-            <div className="bg-[#FEFEFE] shadow-lg w-[90vw] rounded-2xl  p-6 lg:p-12 lg:w-[1000px]">
-                <div className="flex gap-9 flex-col lg:flex-row">
+            <div className="bg-[#FEFEFE] shadow-lg w-[90vw] rounded-2xl p-6 lg:p-12 lg:w-[1000px]">
+                <div className="flex gap-5 lg:gap-9 flex-col lg:flex-row">
                     <img
                         src={
                             data.avatar_url ||
@@ -122,11 +122,11 @@ const App = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="text-[#4B6A9B] mt-6 lg:mt-9 flex items-center gap-0 flex-col lg:gap-5 lg:flex-row">
+                        <div className="text-[#4B6A9B] mt-6 lg:mt-9 flex items-center gap-0 flex-col lg:gap-5 lg:flex-row px-6 lg:px-0 justify-center lg:justify-between">
                             <div className="flex flex-col gap-0 lg:gap-3">
                                 <span className="flex items-center gap-5">
                                     <IoLocationSharp />
-                                    <span className="w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
+                                    <span className="w-[200px] lg:w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
                                         {data.location || "Not Available"}
                                     </span>
                                 </span>
@@ -134,7 +134,7 @@ const App = () => {
                                     <FaLink />
                                     <a
                                         href={data.blog}
-                                        className="w-[300px] whitespace-nowrap overflow-hidden text-ellipsis hover:underline">
+                                        className="w-[200px] lg:w-[300px] whitespace-nowrap overflow-hidden text-ellipsis hover:underline">
                                         {data.blog || "Not Available"}
                                     </a>
                                 </span>
@@ -142,7 +142,7 @@ const App = () => {
                             <div className="flex flex-col gap-0 lg:gap-3">
                                 <span className="flex items-center gap-5">
                                     <FaTwitter />
-                                    <span className="w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
+                                    <span className="w-[200px] lg:w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
                                         @
                                         {data.twitter_username ||
                                             "Not Available"}
@@ -150,7 +150,7 @@ const App = () => {
                                 </span>
                                 <span className="flex items-center gap-5">
                                     <FaBuilding />
-                                    <span className="w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
+                                    <span className="w-[200px] lg:w-[300px] whitespace-nowrap overflow-hidden text-ellipsis">
                                         {data.company || "Not Available"}
                                     </span>
                                 </span>
