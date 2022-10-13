@@ -40,8 +40,8 @@ const App = () => {
     return (
         <div className="bg-[#F2F2F2] w-[100vw] h-[100vh] flex justify-center items-center flex-col gap-4">
             <div className="">
-                <div className="search flex items-center justify-between bg-[#FEFEFE] shadow-lg w-[1000px] p-2 rounded-2xl">
-                    <BiSearchAlt className="text-[#0079FF] text-3xl mx-6" />
+                <div className="search flex items-center justify-between bg-[#FEFEFE] shadow-lg w-[90vw] p-2 rounded-2xl lg:w-[1000px]">
+                    <BiSearchAlt className="text-[#0079FF] text-3xl mx-3 lg:mx-6" />
                     <input
                         type="text"
                         className="outline-none border-none w-full caret-[#0079FF]"
@@ -62,8 +62,8 @@ const App = () => {
                 </div>
             </div>
 
-            <div className="bg-[#FEFEFE] shadow-lg w-[1000px] rounded-2xl p-12">
-                <div className="flex gap-9">
+            <div className="bg-[#FEFEFE] shadow-lg w-[90vw] rounded-2xl  p-6 lg:p-12 lg:w-[1000px]">
+                <div className="flex gap-9 flex-col lg:flex-row">
                     <img
                         src={
                             data.avatar_url ||
@@ -73,7 +73,7 @@ const App = () => {
                         className="rounded-full w-[117px] h-[117px] bg-cover bg-center border-[1px] border-[#0079FF] mr-10"
                     />
                     <div className="w-full">
-                        <div className="flex justify-between">
+                        <div className="flex justify-between flex-col gap-2 lg:flex-row lg:gap-0">
                             <div className="">
                                 <h3 className="font-bold text-2xl">
                                     {data.name || "username"}
@@ -96,7 +96,7 @@ const App = () => {
                         <p className="text-[#4B6A9B] mt-3">
                             {data.bio || "Empty"}
                         </p>
-                        <div className="bg-[#F6F8FF] py-4 px-8 rounded-[10px] mt-8 flex items-center justify-between">
+                        <div className="bg-[#F6F8FF] py-4 px-8 rounded-[10px] mt-6 lg:mt-8 flex items-center justify-between">
                             <div className="">
                                 <p className="text-[#4B6A9B] text-sm mb-2">
                                     Repos
@@ -122,7 +122,7 @@ const App = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="text-[#4B6A9B] mt-9 flex items-center gap-5">
+                        <div className="text-[#4B6A9B] mt-6 lg:mt-9 flex items-center gap-0 flex-col lg:gap-5 lg:flex-row">
                             <div className="flex flex-col gap-3">
                                 <span className="flex items-center gap-5">
                                     <IoLocationSharp />
