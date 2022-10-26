@@ -6,7 +6,6 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaLink, FaTwitter, FaBuilding } from "react-icons/fa";
 import { MdNightlight } from "react-icons/md";
 import { BsSunFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 const App = () => {
    const [nightMode, setNightMode] = useState(false);
