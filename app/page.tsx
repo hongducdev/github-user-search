@@ -1,3 +1,4 @@
+import Result from "@/components/Result";
 import SearchInput from "@/components/SearchInput";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
           <span className="font-bold text-[26px]">hongducdev</span>
         </section>
         <SearchInput />
+        <Result />
       </section>
     </main>
   );
