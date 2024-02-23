@@ -1,4 +1,3 @@
-import ThemeToggle from "@/components/ThemeToggle";
 import SearchInput from "@/components/SearchInput";
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
       <section className="w-[730px]">
         <section className="w-full flex items-center justify-between mb-9">
           <span className="font-bold text-[26px]">hongducdev</span>
-          <ThemeToggle />
         </section>
         <SearchInput />
       </section>
